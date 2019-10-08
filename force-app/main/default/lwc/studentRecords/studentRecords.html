@@ -1,0 +1,17 @@
+<template>
+    <lightning-card title="Student Details" style="font-weight: bold">
+        
+        <div class="main-details" style="margin: 10px">
+            <lightning-input class="searchbar" title="Search" style="margin: 10px"></lightning-input>   
+            <span class="slds-avatar" style="margin: 5px">
+                <abbr class="slds-avatar__initials slds-icon-standard-account" title="company name">{SN_avatar}</abbr>
+            </span>
+            <p style="padding: 5px">Student Name:</p><lightning-formatted-text>{student_name}</lightning-formatted-text>
+            <p style="padding: 5px">Class:</p><lightning-formatted-text>{_class}</lightning-formatted-text>
+            <p style="padding: 5px">Roll Number:</p><lightning-formatted-text>{class_roll}</lightning-formatted-text>
+            <p style="padding: 5px"> Date Of Birth:</p><lightning-formatted-text>{date_of_birth}</lightning-formatted-text>
+            <p style="padding: 5px">Mentor:</p><lightning-formatted-text>{_mentor}</lightning-formatted-text>
+        </div>
+    </lightning-card>
+    
+</template>

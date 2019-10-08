@@ -1,0 +1,15 @@
+<apex:page Controller="community1"   showHeader="false" >
+ <h1 style="align: center; font-size:x-large">Student Details</h1>
+<apex:form>
+    <apex:pageBlock>
+        <apex:inputText label="Student name" value="{!value}"/>
+    <apex:commandButton value="search" action="{!searchdata}" reRender="pb"/>
+        <apex:pageBlockSection id="pb">
+            <apex:pageBlockTable value="{!conlist}" var="c">
+                <apex:column value="{!c.id}"/>
+                <apex:column value="{!c.name}"/>
+            </apex:pageBlockTable>
+        </apex:pageBlockSection>
+    </apex:pageBlock>
+</apex:form>
+</apex:page>
